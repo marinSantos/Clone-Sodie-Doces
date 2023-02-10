@@ -1,6 +1,10 @@
+.navSection {
+  background-color: #ffffff !important;
+}
 
+/* Slide Mobile */
 
-.containerMoba {
+.containerMobile {
   position: relative;
   display: none;
   flex-direction: column;
@@ -8,22 +12,22 @@
   width: 100%;
 }
 
-.foodsMoba {
+.foodsMobile {
   width: 280px;
   display: flex;
   padding: 100px 0 40px 0;
   overflow: hidden;
 }
 
-.figuresM {
+.arrowsM {
   -moz-column-gap: 320px;
-       column-gap: 320px;
+  column-gap: 320px;
   position: absolute;
   display: flex;
   top: 50%;
 }
 
-.figuresM img {
+.arrowsM img {
   cursor: pointer;
 }
 
@@ -32,36 +36,6 @@
   height: 365px;
   display: flex;
   align-items: center;
-}
-
-.slides2Moba h2 {
-  color: #ffffff;
-  font-size: 30px;
-  font-weight: 800;
-  position: absolute;
-  top: 75%;
-  align-self: center;
-}
-
-.btnMo {
-  color: #482316;
-  background-color: #e5dbd0;
-  width: 113px;
-  height: 30px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  position: absolute;
-  top: 88%;
-  align-self: center;
-  z-index: 100;
-}
-
-.slides2Moba .btnMo:hover {
-  color: #e5dbd0 !important;
-  background-color: #482316 !important;
 }
 
 .cardsM {
@@ -76,52 +50,19 @@
   margin: 0 9px 0 9px;
 }
 
-.img1M {
-  background-image: url(Imagens/bg_bolos.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.img2M {
-  background-image: url(Imagens/bg_salgados.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.img3M {
-  background-image: url(Imagens/bg_kit_festa.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.img4M {
-  background-image: url(Imagens/bg_doces.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.img5M {
-  background-image: url(Imagens/bg_balas_de_coco.png);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .cardsM:hover {
   background-size: 110%;
 }
 
-.carrocel {
-  position: relative;
-}
+/* Slide Mobile */
 
-.pAtual {
-  background-color: #ffffff !important;
-}
+
+
+
+
+
+
+
 
 .btn2 {
   height: 40px;
@@ -141,13 +82,20 @@ main {
   align-items: center;
 }
 
+.carrocel {
+  background-color: #482316;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 .nav {
+  margin-top: 30%;
   position: absolute;
   display: flex;
   -moz-column-gap: 20px;
-       column-gap: 20px;
-  top: 87%;
-  left: 30%;
+  column-gap: 20px;
   z-index: 10;
 }
 
@@ -208,7 +156,7 @@ header nav,
   display: flex;
   align-items: center;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 
 header nav {
@@ -227,7 +175,7 @@ nav a {
   display: flex;
   align-items: center;
   -moz-column-gap: 3px;
-       column-gap: 3px;
+  column-gap: 3px;
 }
 
 nav .a::after {
@@ -274,6 +222,22 @@ select.custom-select {
   color: #482316;
 }
 
+
+/* Slide2 infinito */
+
+.arrows {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1150px;
+  column-gap: 1150px;
+  top: 50%;
+}
+
+.arrows img {
+  cursor: pointer;
+}
+
 .container {
   position: relative;
   display: flex;
@@ -282,40 +246,24 @@ select.custom-select {
   width: 100%;
 }
 
-.figures {
-  position: absolute;
-  display: flex;
-  -moz-column-gap: 1150px;
-       column-gap: 1150px;
-  top: 50%;
-}
-
-.figures img {
-  cursor: pointer;
-}
-
 .foods {
-  width: 1140px;
+  width: calc(4 * 266px);
   display: flex;
-  padding: 100px 0 40px 0;
+  padding: 100px 0 60px 0;
   overflow: hidden;
-  align-items: center;
+  padding-left: 10px;
 }
 
 .slides2 {
-  width: 4400px;
-  height: 365px;
+  width: calc(5 * 266px);
+  height: 370px;
   display: flex;
   align-items: center;
-  transform: translateX(-282px);
-}
-
-.transistion2 {
-  transition: all 0.3s !important;
+  column-gap: 13px;
+  margin-left: -280px;
 }
 
 .cards {
-  transition: 0.4s !important;
   height: 100%;
   width: 266px;
   border-radius: 30px;
@@ -323,7 +271,11 @@ select.custom-select {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 0 9px 0 9px;
+  transition: all 0.3s !important;
+}
+
+.transistion2 {
+  transition: all 0.3s !important;
 }
 
 .img1 {
@@ -369,16 +321,17 @@ select.custom-select {
   background-size: 100% !important;
 }
 
-.slides2 h2 {
+div > h2 {
   color: #ffffff;
   font-size: 30px;
   font-weight: 800;
   position: absolute;
   top: 75%;
   align-self: center;
+  cursor: auto;
 }
 
-.slides2 .cards .btn {
+.btn {
   color: #482316;
   background-color: #e5dbd0;
   width: 113px;
@@ -394,14 +347,75 @@ select.custom-select {
   z-index: 100;
 }
 
-.slides2 .btn:hover {
+.btn:hover {
   color: #e5dbd0 !important;
   background-color: #482316 !important;
 }
 
+/* Slide2 infinito */
+
+
+/* Slide Mobile */
+
+.containerMobile {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.foodsMobile {
+  width: 280px;
+  display: flex;
+  padding: 100px 0 40px 0;
+  overflow: hidden;
+}
+
+.arrowsMobile {
+  -moz-column-gap: 320px;
+  column-gap: 320px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+}
+
+.arrowsMobile img {
+  cursor: pointer;
+}
+
+.slides2Mobile {
+  width: 1560px;
+  height: 365px;
+  display: flex;
+  align-items: center;
+}
+
+.cardsM {
+  transition: 0.4s !important;
+  height: 100%;
+  width: 266px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 9px 0 9px;
+}
+
+.cardsM:hover {
+  background-size: 110%;
+}
+
+/* Slide Mobile */
+
+
+
+/* Rodapé */
 footer {
   width: 100%;
 }
+
 
 .faixa {
   width: 100%;
@@ -412,7 +426,7 @@ footer {
   height: 65px;
   justify-content: center;
   -moz-column-gap: 60px;
-       column-gap: 60px;
+  column-gap: 60px;
 }
 
 .store img {
@@ -444,18 +458,20 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .figures {
+  .arrows {
     display: none;
   }
+
   .container {
     display: none;
   }
-  .containerMoba {
+
+  .containerMobile {
     display: flex;
   }
-  .nav {
-    left: 20%;
-  }
+
+ 
+
   .cards {
     transition: 0.4s !important;
     height: 100%;
@@ -465,15 +481,18 @@ footer {
     position: static;
     margin: 0 0;
   }
+
   .mobile {
     display: flex;
     cursor: pointer;
   }
+
   .burguer {
     height: 5px;
     width: 35px;
     background: #5b3a30;
   }
+
   .burguer::after {
     content: "";
     position: absolute;
@@ -483,6 +502,7 @@ footer {
     background: #5b3a30;
     transition: all 0.5s;
   }
+
   .burguer::before {
     content: "";
     position: absolute;
@@ -492,11 +512,13 @@ footer {
     background: #5b3a30;
     transition: all 0.5s;
   }
+
   .close {
     height: 5px;
     width: 35px;
     background: rgba(91, 58, 48, 0) !important;
   }
+
   .close::after {
     content: "";
     position: absolute;
@@ -506,6 +528,7 @@ footer {
     width: 35px;
     background: #5b3a30 !important;
   }
+
   .close::before {
     content: "";
     position: absolute;
@@ -515,6 +538,7 @@ footer {
     width: 35px;
     background: #5b3a30 !important;
   }
+
   .moba {
     display: flex;
     flex-direction: column;
@@ -526,6 +550,7 @@ footer {
     transition: all 0.6s;
     row-gap: 50px;
   }
+
   .moba nav {
     display: flex;
     justify-content: center;
@@ -534,6 +559,7 @@ footer {
     row-gap: 15px;
     width: 100%;
   }
+
   .moba nav a {
     text-decoration: none;
     padding: 15px 10px;
@@ -541,45 +567,56 @@ footer {
     color: #5b3a30;
     border-bottom: 2px solid #5b3a30;
   }
+
   .moba nav a:hover {
     text-decoration: underline;
   }
+
   .moba.open {
     height: 440px;
   }
+
   header {
     transition: all 0.6s;
     margin-bottom: 0;
   }
+
   header nav {
     display: none;
   }
+
   .rodape nav {
     display: none;
   }
 }
+
 @media (max-width: 767px) {
   .saiba {
     height: 290px;
   }
+
   .saiba h2 {
     font-size: 1.1em;
   }
+
   .saiba form {
     display: flex;
     flex-direction: column;
     width: 90%;
     row-gap: 15px;
   }
+
   .saiba form select {
     width: 100%;
   }
+
   .faixa {
     height: 200px;
     align-items: center;
     flex-direction: column;
     row-gap: 15px;
   }
+
   .store {
     align-items: center;
     display: flex;
@@ -587,32 +624,34 @@ footer {
     row-gap: 8px;
   }
 }
+
 @media (max-width: 480px) and (max-width: 400px) {
-  .nav {
-    left: 10%;
-  }
-  .figuresM {
+  
+
+  .arrowsMobile {
     -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
     top: 92%;
   }
 }
+
 @media (max-width: 399px) {
   .nav {
-    left: 5%;
-    width: 270px;
+    width: 200px;
   }
+
   header .logo {
     position: absolute;
   }
-  .nav {
-    left: 10%;
-    width: 200px;
-  }
+
+
   .logo img {
     width: 155px;
   }
+
   .faixa p {
     font-size: 0.8em;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
