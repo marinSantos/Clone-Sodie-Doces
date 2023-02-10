@@ -295,11 +295,10 @@ const imgs2M = document.querySelector('.slides2Moba');
 let index = 0;
 arrow2M.addEventListener('click', () => {
   index++;
-  
-  if (index == 4) {
-    index = 0;
-    imgs2M.style.transform = `translateX(${0)`;
-  }else{imgs2M.style.transform = `translateX(-${index * 284}px)`;}
+  imgs2M.style.transform = `translateX(-${index * 284}px)`;
+  if (index == 5) {
+    index = 0
+  } 
 });
 
 arrow1M.addEventListener('click', () => {
