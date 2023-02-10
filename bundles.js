@@ -315,6 +315,4 @@ arrow1M.addEventListener('click', () => {
   imgs2M.style.transform = `translateX(-${index * 284}px)`;
 });
 
-ScrollReveal({reset:true,delay: 200})
-ScrollReveal().reveal('.slides2',{ distance: '10px', origin: 'top'});
 
