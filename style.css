@@ -472,15 +472,7 @@ footer {
 
  
 
-  .cards {
-    transition: 0.4s !important;
-    height: 100%;
-    width: 366px;
-    border-radius: 30px;
-    cursor: pointer;
-    position: static;
-    margin: 0 0;
-  }
+ 
 
   .mobile {
     display: flex;
@@ -628,7 +620,7 @@ footer {
 @media (max-width: 480px) and (max-width: 400px) {
   
 
-  .arrowsMobile {
+  .arrowsM {
     -moz-column-gap: 20px;
     column-gap: 20px;
     top: 92%;
