@@ -298,6 +298,7 @@ arrow2M.addEventListener('click', () => {
   imgs2M.style.transform = `translateX(-${index * 284}px)`;
   if (index == 4) {
     index = 0;
+    imgs2M.style.transform = `translateX(${0)`;
   }
 });
 arrow1M.addEventListener('click', () => {
