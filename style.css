@@ -1,0 +1,620 @@
+.slides2 {
+  visibility: hidden;
+}
+
+.containerMoba {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.foodsMoba {
+  width: 280px;
+  display: flex;
+  padding: 100px 0 40px 0;
+  overflow: hidden;
+}
+
+.figuresM {
+  -moz-column-gap: 320px;
+       column-gap: 320px;
+  position: absolute;
+  display: flex;
+  top: 50%;
+}
+
+.figuresM img {
+  cursor: pointer;
+}
+
+.slides2Moba {
+  width: 1560px;
+  height: 365px;
+  display: flex;
+  align-items: center;
+}
+
+.slides2Moba h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  position: absolute;
+  top: 75%;
+  align-self: center;
+}
+
+.btnMo {
+  color: #482316;
+  background-color: #e5dbd0;
+  width: 113px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  position: absolute;
+  top: 88%;
+  align-self: center;
+  z-index: 100;
+}
+
+.slides2Moba .btnMo:hover {
+  color: #e5dbd0 !important;
+  background-color: #482316 !important;
+}
+
+.cardsM {
+  transition: 0.4s !important;
+  height: 100%;
+  width: 266px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 9px 0 9px;
+}
+
+.img1M {
+  background-image: url(Imagens/bg_bolos.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img2M {
+  background-image: url(Imagens/bg_salgados.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img3M {
+  background-image: url(Imagens/bg_kit_festa.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img4M {
+  background-image: url(Imagens/bg_doces.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img5M {
+  background-image: url(Imagens/bg_balas_de_coco.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cardsM:hover {
+  background-size: 110%;
+}
+
+.carrocel {
+  position: relative;
+}
+
+.pAtual {
+  background-color: #ffffff !important;
+}
+
+.btn2 {
+  height: 40px;
+  width: 100%;
+  background-color: #482316;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  align-items: center;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav {
+  position: absolute;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  top: 87%;
+  left: 30%;
+  z-index: 10;
+}
+
+.nav p {
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  height: 5px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.slides {
+  height: 100%;
+  display: flex;
+}
+
+.transistion {
+  transition: all 0.4s !important;
+}
+
+.slides img {
+  width: 100%;
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #E5DBD0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  margin-bottom: 2px;
+  position: relative;
+}
+
+header .logo {
+  position: absolute;
+}
+
+header nav,
+.rodape nav {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+header nav {
+  position: absolute;
+  right: 10%;
+}
+
+header a,
+.rodape a {
+  color: #5b3a30;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 3px;
+       column-gap: 3px;
+}
+
+nav .a::after {
+  font-size: 25px;
+  padding: 10px;
+  content: "|";
+}
+
+nav a img {
+  width: 8px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.saiba {
+  background-image: url(Imagens/bg_lojas.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 75px 0;
+  height: 190px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.saiba h2 {
+  font-weight: 200;
+  color: #ffffff;
+}
+
+select.custom-select {
+  width: 200px;
+  height: 35px !important;
+  margin: 0 5px;
+  border-radius: 10px;
+  border: none;
+  height: auto;
+  padding: 5px 10px;
+  color: #482316;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.figures {
+  position: absolute;
+  display: flex;
+  -moz-column-gap: 1150px;
+       column-gap: 1150px;
+  top: 50%;
+}
+
+.figures img {
+  cursor: pointer;
+}
+
+.foods {
+  width: 1140px;
+  display: flex;
+  padding: 100px 0 40px 0;
+  overflow: hidden;
+  align-items: center;
+}
+
+.slides2 {
+  width: 4400px;
+  height: 365px;
+  display: flex;
+  align-items: center;
+  transform: translateX(-282px);
+}
+
+.transistion2 {
+  transition: all 0.3s !important;
+}
+
+.cards {
+  transition: 0.4s !important;
+  height: 100%;
+  width: 266px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 9px 0 9px;
+}
+
+.img1 {
+  background-image: url(Imagens/bg_bolos.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img2 {
+  background-image: url(Imagens/bg_salgados.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img3 {
+  background-image: url(Imagens/bg_kit_festa.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img4 {
+  background-image: url(Imagens/bg_doces.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img5 {
+  background-image: url(Imagens/bg_balas_de_coco.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cards:hover {
+  background-size: 110%;
+}
+
+.ajuste {
+  background-size: 100% !important;
+}
+
+.slides2 h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  position: absolute;
+  top: 75%;
+  align-self: center;
+}
+
+.slides2 .cards .btn {
+  color: #482316;
+  background-color: #e5dbd0;
+  width: 113px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  position: absolute;
+  top: 88%;
+  align-self: center;
+  z-index: 100;
+}
+
+.slides2 .btn:hover {
+  color: #e5dbd0 !important;
+  background-color: #482316 !important;
+}
+
+footer {
+  width: 100%;
+}
+
+.faixa {
+  width: 100%;
+  background-color: #482316;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  justify-content: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+
+.store img {
+  cursor: pointer;
+}
+
+.rodape {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.mobile {
+  display: none;
+  height: 45px;
+  width: 45px;
+  align-items: center;
+  justify-content: center;
+  right: 10%;
+  position: absolute;
+}
+
+.moba {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .figures {
+    display: none;
+  }
+  .container {
+    display: none;
+  }
+  .containerMoba {
+    display: flex;
+  }
+  .nav {
+    left: 20%;
+  }
+  .cards {
+    transition: 0.4s !important;
+    height: 100%;
+    width: 366px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: static;
+    margin: 0 0;
+  }
+  .mobile {
+    display: flex;
+    cursor: pointer;
+  }
+  .burguer {
+    height: 5px;
+    width: 35px;
+    background: #5b3a30;
+  }
+  .burguer::after {
+    content: "";
+    position: absolute;
+    margin-top: 10px;
+    height: 5px;
+    width: 35px;
+    background: #5b3a30;
+    transition: all 0.5s;
+  }
+  .burguer::before {
+    content: "";
+    position: absolute;
+    margin-top: -10px;
+    height: 5px;
+    width: 35px;
+    background: #5b3a30;
+    transition: all 0.5s;
+  }
+  .close {
+    height: 5px;
+    width: 35px;
+    background: rgba(91, 58, 48, 0) !important;
+  }
+  .close::after {
+    content: "";
+    position: absolute;
+    margin-top: 0px !important;
+    transform: rotate(-48deg) !important;
+    height: 5px;
+    width: 35px;
+    background: #5b3a30 !important;
+  }
+  .close::before {
+    content: "";
+    position: absolute;
+    margin-top: 0px;
+    transform: rotate(48deg) !important;
+    height: 5px;
+    width: 35px;
+    background: #5b3a30 !important;
+  }
+  .moba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 0px;
+    background-color: #E5DBD0;
+    padding: 0px 30px;
+    margin-bottom: 2px;
+    transition: all 0.6s;
+    row-gap: 50px;
+  }
+  .moba nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 100%;
+  }
+  .moba nav a {
+    text-decoration: none;
+    padding: 15px 10px;
+    width: 90%;
+    color: #5b3a30;
+    border-bottom: 2px solid #5b3a30;
+  }
+  .moba nav a:hover {
+    text-decoration: underline;
+  }
+  .moba.open {
+    height: 440px;
+  }
+  header {
+    transition: all 0.6s;
+    margin-bottom: 0;
+  }
+  header nav {
+    display: none;
+  }
+  .rodape nav {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .saiba {
+    height: 290px;
+  }
+  .saiba h2 {
+    font-size: 1.1em;
+  }
+  .saiba form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    row-gap: 15px;
+  }
+  .saiba form select {
+    width: 100%;
+  }
+  .faixa {
+    height: 200px;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .store {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+}
+@media (max-width: 480px) and (max-width: 400px) {
+  .nav {
+    left: 10%;
+  }
+  .figuresM {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    top: 92%;
+  }
+}
+@media (max-width: 399px) {
+  .nav {
+    left: 5%;
+    width: 270px;
+  }
+  header .logo {
+    position: absolute;
+  }
+  .nav {
+    left: 10%;
+    width: 200px;
+  }
+  .logo img {
+    width: 155px;
+  }
+  .faixa p {
+    font-size: 0.8em;
+  }
+}/*# sourceMappingURL=style.css.map */
