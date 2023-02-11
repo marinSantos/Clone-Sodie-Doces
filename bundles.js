@@ -217,7 +217,7 @@ function next() {
     slides2.style.transition = "none";
     slides2.insertAdjacentElement("beforeend", $firstSlide)
     slides2.style.marginLeft = "-280px"
-  }, 700)
+  },0)
 }
 
 function prev() {
@@ -229,7 +229,7 @@ function prev() {
       slides2.style.transition = "none";
       slides2.insertAdjacentElement("afterbegin", lastSlider)
       slides2.style.marginLeft = "-280px"
-  }, 700);
+  },0);
 
 }
 
