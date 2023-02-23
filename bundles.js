@@ -8,11 +8,11 @@ function efect() {
   pos = 0;
   imgs.classList.remove('transistion');
   imgs.style.transform = `translateX(${pos * 100}%)`;
-  p0.classList.add('pAtual');
-  p1.classList.remove('pAtual');
-  p2.classList.remove('pAtual');
-  p3.classList.remove('pAtual');
-  p4.classList.remove('pAtual');
+  p0.classList.add('navSection');
+  p1.classList.remove('navSection');
+  p2.classList.remove('navSection');
+  p3.classList.remove('navSection');
+  p4.classList.remove('navSection');
 }
 function carrossel() {
   pos++;
