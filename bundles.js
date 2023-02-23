@@ -20,47 +20,47 @@ function carrossel() {
     imgs.classList.add('transistion');
     imgs.style.transform = `translateX(${-pos * 100}%)`;
     efeito = 1;
-    p0.classList.remove('pAtual');
-    p1.classList.add('pAtual');
-    p2.classList.remove('pAtual');
-    p3.classList.remove('pAtual');
-    p4.classList.remove('pAtual');
+    p0.classList.remove('navSection');
+    p1.classList.add('navSection');
+    p2.classList.remove('navSection');
+    p3.classList.remove('navSection');
+    p4.classList.remove('navSection');
   }
   if (pos == 2) {
     efeito = 1;
     imgs.style.transform = `translateX(${-pos * 100}%)`;
-    p2.classList.add('pAtual');
-    p1.classList.remove('pAtual');
-    p3.classList.remove('pAtual');
-    p4.classList.remove('pAtual');
-    p0.classList.remove('pAtual');
+    p2.classList.add('navSection');
+    p1.classList.remove('navSection');
+    p3.classList.remove('navSection');
+    p4.classList.remove('navSection');
+    p0.classList.remove('navSection');
   }
   if (pos == 3) {
     efeito = 1;
     imgs.style.transform = `translateX(${-pos * 100}%)`;
-    p3.classList.add('pAtual');
-    p1.classList.remove('pAtual');
-    p2.classList.remove('pAtual');
-    p4.classList.remove('pAtual');
-    p0.classList.remove('pAtual');
+    p3.classList.add('navSection');
+    p1.classList.remove('navSection');
+    p2.classList.remove('navSection');
+    p4.classList.remove('navSection');
+    p0.classList.remove('navSection');
   }
   if (pos == 4) {
     efeito = 1;
     imgs.style.transform = `translateX(${-pos * 100}%)`;
-    p4.classList.add('pAtual');
-    p1.classList.remove('pAtual');
-    p3.classList.remove('pAtual');
-    p2.classList.remove('pAtual');
-    p0.classList.remove('pAtual');
+    p4.classList.add('navSection');
+    p1.classList.remove('navSection');
+    p3.classList.remove('navSection');
+    p2.classList.remove('navSection');
+    p0.classList.remove('navSection');
   }
   if (pos == 5) {
     efeito = 2;
     imgs.style.transform = `translateX(${-pos * 100}%)`;
-    p1.classList.remove('pAtual');
-    p3.classList.remove('pAtual');
-    p4.classList.remove('pAtual');
-    p2.classList.remove('pAtual');
-    p0.classList.remove('pAtual');
+    p1.classList.remove('navSection');
+    p3.classList.remove('navSection');
+    p4.classList.remove('navSection');
+    p2.classList.remove('navSection');
+    p0.classList.remove('navSection');
   }
   if (efeito === 2) {
     imgs.addEventListener('transitionend', efect);
@@ -217,7 +217,7 @@ function next() {
     slides2.style.transition = "none";
     slides2.insertAdjacentElement("beforeend", $firstSlide)
     slides2.style.marginLeft = "-280px"
-  },0)
+  }, 0)
 }
 
 function prev() {
@@ -226,10 +226,10 @@ function prev() {
   slides2.style.marginLeft = "0px";
   slides2.style.transition = "margin-left 1s";
   setTimeout(() => {
-      slides2.style.transition = "none";
+      slides2.style.transition = "1s";
       slides2.insertAdjacentElement("afterbegin", lastSlider)
       slides2.style.marginLeft = "-280px"
-  },0);
+  }, 0);
 
 }
 
